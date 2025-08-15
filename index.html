@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EMGEE GREENS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sect-1">
+      <img class="logo-main" src="images/logo.png" alt="" />
+      <div class="container-fluid cont-1">
+        <div class="row">
+          <div class="col-md-7 main-1">
+            <div class="content-1">
+              <h1 class="head-1">EMGEE GREENS</h1>
+              <p class="para-1">A Home in nature, Yet connected to the world</p>
+              <div class="box-1">
+                <div class="box-1-1">
+                  <p class="para-2">
+                    Inaugural Offer from <span class="rupee"> ₹ 1.2 Cr*</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 main-2">
+            <form class="f1 bg-white text-center d-grid p-4">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+              <h2>Register Now</h2>
+              <div class="">
+                <input
+                  class=""
+                  type="text"
+                  placeholder="Full Name"
+                  id="contact-name"
+                  onkeyup="validateName()"
+                />
+                <p id="name-error"></p>
+              </div>
+              <div class="">
+                <input
+                  class=""
+                  type="email"
+                  placeholder="E-mail"
+                  id="contact-email"
+                  onkeyup="validateEmail()"
+                />
+                <p id="email-error"></p>
+              </div>
+              <div class="">
+                <input
+                  class=""
+                  type="tel"
+                  placeholder="Mobile Number"
+                  id="contact-phone"
+                  onkeyup="validatePhone()"
+                />
+                <p id="phone-error"></p>
+              </div>
+              <div class="">
+                <input
+                  class="otpp"
+                  type="tel"
+                  placeholder="OTP"
+                  id="otp"
+                  onkeyup="validatePhone()"
+                />
+                <button class="otp-send position-absolute">SEND OTP</button>
+                <p id="otp-error"></p>
+              </div>
+
+              <button
+                class="form-control register-button"
+                onclick="return validateForm()"
+              >
+                Register
+              </button>
+              <p id="submit-error"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid cont-2 shadow">
+      <div class="row text-center">
+        <div class="col-md-3 offset-md-2">
+          <div class="years">
+            <p class="num">30+</p>
+            <p class="text-1">Years of experience</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="sqft">
+            <p class="num">5M+</p>
+            <p class="text-1">Sq. Ft. Delivered</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="family">
+            <p class="num">1500+</p>
+            <p class="text-1">Happy Families</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="sect-2">
+      <div class="container-fluid cont-3">
+        <div class="row row-1">
+          <div class="col-md-4 abt-us">
+            <p class="abt">About Us</p>
+            <h3>Get to Know the Team Behind the Green.</h3>
+          </div>
+          <div class="col-md-7 text-ord">
+            <p class="para-3">
+              With over five decades of expertise, the Vikas Group has been a
+              trailblazer in transforming the real estate landscape of Mumbai
+              and Khandala. Founded by Shri Madanlal Gupta in 1972, the group
+              began its journey with Vikas Apartments in Juhu and has since
+              delivered iconic projects that combine innovation, integrity, and
+              sustainability.
+            </p>
+            <p class="para-3">
+              In 2002, the EMGEE Group emerged as an offshoot of the Vikas
+              Group, carrying forward the legacy while bringing a fresh
+              perspective to luxury real estate. Known for its expertise in
+              creating premium residential, commercial, and township projects,
+              the EMGEE Group is synonymous with meticulous design, superior
+              quality, and trust.
+            </p>
+          </div>
+        </div>
+        <div class="row row-2">
+          <div class="col-md-5 img-1">
+            <img src="images/about-1.png" class="order-1" />
+          </div>
+          <div class="col-md-5 img-2 order-2">
+            <img src="images/about-2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect-3">
+      <div class="container-fluid cont-3 cont-4">
+        <div class="row row-1">
+          <div class="col-md-4 abt-us abt-us-1">
+            <p class="abt">Connectivity at Emgee Greens</p>
+            <h3>Classic Connectivity To New Lonavala</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="para-3">
+              Strategically located in New Lonavala, EMGEE Greens enjoys
+              seamless connectivity to Mumbai, Pune, and beyond. The upcoming
+              Mumbai-Pune Missing Link expressway and Atal Setu have drastically
+              reduced travel times, making it easier than ever to reach this
+              tranquil retreat.
+            </p>
+            <p class="para-3">
+              The upcoming Navi Mumbai Airport further enhances accessibility
+              for domestic and international travel, making EMGEE Greens a
+              coveted destination for second homes. With proximity to renowned
+              attractions like Bhaja and Karla Caves, EMGEE Greens is perfectly
+              positioned to combine modern living with natural beauty.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container contt">
+        <div class="row connect">
+          <div class="col-md-3">
+            <img src="images/conct-1.png" alt="" />
+            <p>Atal Setu - 60 MIN</p>
+          </div>
+          <div class="col-md-3">
+            <img class="navi" src="images/conct-2.png" alt="" />
+            <p>Upcoming Navi Mumbai Airport - 57 MIN</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/conct-3.png" alt="" />
+            <p>Upcoming Missing Link Project - 7 MIN</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/conct-4.png" alt="" />
+            <p>Greenfield Corridor - 60 MIN</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-bolder">
+            <p>Our Amenities</p>
+            <h1>Amenities That Let You Live Closer to Nature.</h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bosa">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="container bosa-1 connect-2">
+              <div class="row slid-sec">
+                <div class="slid">
+                  <div class="col-md-2 slid-img">
+                    <img src="images/resto.png" alt="" />
+                  </div>
+                  <div class="col-md-2 slid-img">
+                    <img src="images/gym.png" alt="" />
+                  </div>
+                  <div class="col-md-2 slid-img">
+                    <img src="images/ev.png" alt="" />
+                  </div>
+                  <div class="col-md-2 slid-img">
+                    <img src="images/court.png" alt="" />
+                  </div>
+                  <div class="col-md-2 slid-img">
+                    <img src="images/resto.png" alt="" />
+                  </div>
+                  <div class="col-md-2 slid-img">
+                    <img src="images/ev.png" alt="" />
+                  </div>
+                  <div class="col-md-2 slid-img">
+                    <img src="images/gym.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid cont-9">
+        <div class="row">
+          <div class="col-md-6 tab-col">
+            <div class="tablet">
+              <p>List Of Plots</p>
+              <table class="">
+                <thead>
+                  <tr>
+                    <th class="top-l">SR. NO.</th>
+                    <th class="middle">PLOT NO.</th>
+                    <th class="top">AREA PER PLOT (SQ.FT)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tb-row-1">
+                    <td>1</td>
+                    <td>02, 03, 05, 08, 09, 17, 18, 19, 20, 23, 24, 26, 29</td>
+                    <td>5381.95</td>
+                  </tr>
+                  <tr class="tb-row">
+                    <td>2</td>
+                    <td>04</td>
+                    <td>5808.63</td>
+                  </tr>
+                  <tr class="tb-row-1">
+                    <td>3</td>
+                    <td>06, 07</td>
+                    <td>5382.17</td>
+                  </tr>
+                  <tr class="tb-row">
+                    <td>4</td>
+                    <td>10</td>
+                    <td>5382.92</td>
+                  </tr>
+                  <tr class="tb-row-1">
+                    <td>5</td>
+                    <td>11</td>
+                    <td>5490.45</td>
+                  </tr>
+                  <tr class="tb-row">
+                    <td>6</td>
+                    <td>12, 13, 14, 15, 16</td>
+                    <td>5384.53</td>
+                  </tr>
+                  <tr></tr>
+                  <tr class="tb-row-1">
+                    <td>7</td>
+                    <td>21</td>
+                    <td>5387.12</td>
+                  </tr>
+                  <tr class="tb-row">
+                    <td>8</td>
+                    <td>22</td>
+                    <td>5462.57</td>
+                  </tr>
+                  <tr class="tb-row-1">
+                    <td>9</td>
+                    <td>25, 30, 31</td>
+                    <td>5383.67</td>
+                  </tr>
+                  <tr class="tb-row">
+                    <td>10</td>
+                    <td>27</td>
+                    <td>5385.72</td>
+                  </tr>
+                  <tr class="tb-row-1">
+                    <td class="bot-l">11</td>
+                    <td>28</td>
+                    <td class="bot-r">5385.39</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h1 class="text-center">Plan</h1>
+            <img class="plan-img" src="images/plan.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 ban-cont">
+            <h1>Discover More in Our Brochure</h1>
+            <p>
+              Get a closer look at our garden designs, services, and success
+              stories. Download the Emgee Garden brochure to explore how we
+              bring nature and innovation together in every space we create.
+            </p>
+            <div class="download">
+              <a href="">DOWNLOAD BROCHURE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect-6">
+      <div class="container cont-6">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Exclusive Benefits at Sterling Stolen Heaven</h1>
+          </div>
+        </div>
+        <div class="row connect-1">
+          <div class="col-md-3">
+            <div class="weds">
+              <img class="position-relative" src="images/wedding.png" alt="" />
+              <h5 class="weds-text position-absolute">Wdding <br />Lawns</h5>
+            </div>
+          </div>
+          <div class="col-md-3 marg">
+            <div class="weds">
+              <img class="position-relative" src="images/parking.png" alt="" />
+              <h5 class="weds-text position-absolute">
+                Parking Spave <br />(200 Cars)
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-3 marg">
+            <div class="weds">
+              <img
+                class="position-relative"
+                src="images/conference.png"
+                alt=""
+              />
+              <h5 class="weds-text position-absolute">Conference <br />Hall</h5>
+            </div>
+          </div>
+          <div class="col-md-3 marg">
+            <div class="weds">
+              <img
+                class="position-relative"
+                src="images/landscapng.png"
+                alt=""
+              />
+              <h5 class="weds-text position-absolute">
+                Lush Green <br />Landscaping
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="row connect-1 justify-content-center">
+          <div class="col-md-3">
+            <div class="weds">
+              <img class="position-relative" src="images/dining.png" alt="" />
+              <h5 class="weds-text position-absolute">Sky Dining</h5>
+            </div>
+          </div>
+          <div class="col-md-3 marg">
+            <div class="weds">
+              <img class="position-relative" src="images/bar.png" alt="" />
+              <h5 class="weds-text position-absolute">Bar</h5>
+            </div>
+          </div>
+          <div class="col-md-3 marg">
+            <div class="weds">
+              <img class="position-relative" src="images/resto-1.png" alt="" />
+              <h5 class="weds-text position-absolute">Restaurant</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect-7">
+      <div class="container cont-7">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Nearby Attractions</h1>
+            <ul>
+              <li><span class="me-4 num-1">01</span>Pawna Lake</li>
+              <li><span class="me-4 num-1">02</span>Bhaja and Karla Caves</li>
+              <li><span class="me-4 num-1">03</span>Western Sahyadris</li>
+              <li><span class="me-4 num-1">04</span>Wet n Joy</li>
+              <li><span class="me-4 num-1">05</span>Lonavala Lake</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="row connect row-4">
+              <div class="col-md-6 marg">
+                <img src="images/attract-1.png" alt="" />
+              </div>
+              <div class="col-md-6 marg">
+                <img src="images/attract-2.png" alt="" />
+              </div>
+              <div class="col-md-6 mt-4">
+                <img src="images/attract-3.png" alt="" />
+              </div>
+              <div class="col-md-6 mt-4 mb-4">
+                <img src="images/attract-4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container cont-8">
+      <div class="row mt-4 justify-content-between">
+        <div class="col-md-4 rights">
+          <p>© 2025 emgee greens, All Rights Reserved.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="foot-2 d-flex gap-4">
+            <div class="terms">
+              <p>Terms & Condition</p>
+            </div>
+            <div class="policy">
+              <p>Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slid").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
